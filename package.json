@@ -5,16 +5,19 @@
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "author": "Tostée Lucas",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@luctst/modulo": "^1.0.6",
     "babel-loader": "^8.0.4",
     "html-webpack-plugin": "^3.2.0",
-    "modulo-test-luctst": "^1.0.5",
     "webpack": "^4.28.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.12"
   }
 }
