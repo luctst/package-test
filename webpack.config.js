@@ -3,6 +3,7 @@
  */
 const path = require("path");
 const webpackHtml = require("html-webpack-plugin");
+const port = process.env.PORT || 3000;
 
 /**
  * Éxecution
@@ -32,5 +33,9 @@ module.exports = {
         new webpackHtml({
             template: "src/index.html",
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "dist"),
+        port: 8080,
+    }
 };
