@@ -1,7 +1,7 @@
 /**
  * Import
  */
-const modulo = require("modulo-test-luctst");
+const modulo = require("@luctst/modulo");
 
 /**
  * Variables
@@ -23,4 +23,4 @@ const newElement = (el, content) => {
   * Exécution
   */
 newElement("h1", "Bonjour internet !!");
-console.log(modulo.calcModulo(10, 6));
+newElement("p", modulo.calcModulo(10, 3));
