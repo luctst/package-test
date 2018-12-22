@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/modulo-test-luctst/src/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/modulo-test-luctst/src/index.js ***!
-  \******************************************************/
+/***/ "./node_modules/@luctst/modulo/src/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/@luctst/modulo/src/index.js ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\n * Déclaration\n */\nmodule.exports = {\n    calcModulo: function (x, y) {\n        let n = x / y;\n        let z = y * Math.floor(n);\n        return x - z;\n    }\n}\n\n//# sourceURL=webpack:///./node_modules/modulo-test-luctst/src/index.js?");
+eval("/**\n * Déclaration\n */\nmodule.exports = {\n    calcModulo: function (x, y) {\n        let n = x / y;\n        let z = y * Math.floor(n);\n        return x - z;\n    }\n}\n\n//# sourceURL=webpack:///./node_modules/@luctst/modulo/src/index.js?");
 
 /***/ }),
 
@@ -104,7 +104,7 @@ eval("/**\n * Déclaration\n */\nmodule.exports = {\n    calcModulo: function (x
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/**\n * Import\n */\nvar modulo = __webpack_require__(/*! modulo-test-luctst */ \"./node_modules/modulo-test-luctst/src/index.js\");\n/**\n * Variables\n */\n\n\nvar app = document.querySelector(\"#app\");\n/**\n * Déclaration\n */\n\nvar newElement = function newElement(el, content) {\n  var element = document.createElement(el);\n  var elementContent = document.createTextNode(content);\n  element.appendChild(elementContent);\n  app.appendChild(element);\n};\n/**\n * Exécution\n */\n\n\nnewElement(\"h1\", \"Bonjour internet !!\");\nconsole.log(modulo.calcModulo(10, 6));\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("/**\n * Import\n */\nvar modulo = __webpack_require__(/*! @luctst/modulo */ \"./node_modules/@luctst/modulo/src/index.js\");\n/**\n * Variables\n */\n\n\nvar app = document.querySelector(\"#app\");\n/**\n * Déclaration\n */\n\nvar newElement = function newElement(el, content) {\n  var element = document.createElement(el);\n  var elementContent = document.createTextNode(content);\n  element.appendChild(elementContent);\n  app.appendChild(element);\n};\n/**\n * Exécution\n */\n\n\nnewElement(\"h1\", \"Bonjour internet !!\");\nnewElement(\"p\", modulo.calcModulo(10, 3));\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ })
 
