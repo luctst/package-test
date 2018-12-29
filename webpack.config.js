@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
  */
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, "src", "app.js"),
+    entry: ["@babel/polyfill", path.resolve(__dirname, "src", "app.js")],
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "app-min.js"
@@ -35,7 +35,9 @@ module.exports = {
         })
     ],
     devServer: {
-        contentBase: path.join(__dirname, "dist"),
+        contentBase: path.resolve(__dirname, "dist"),
+        compress: true,
         port: 8080,
+        disableHostCheck: true
     }
 };
