@@ -14,8 +14,8 @@ const weatherData = new weather("26e8fc76ea4289676e61e4f91583579d");
  * Déclaration
  */
 const addTemp = async () => {
-    let res = await weatherData.weather("bordeaux");
-    h1.textContent = `La température maximale sera de ${res.main.temp_max} à ${res.name}`;
+    let res = await weatherData.weather("paris");
+    h1.textContent = `La température maximale sera de ${res.main.temp_max} degree à ${res.name} situé en ${res.sys.country}`;
     app.appendChild(h1);
-}
+};
 addTemp();
