@@ -4,7 +4,5 @@
   "description": "This repo is used for testing my packages",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tostée Lucas"
+  }
 }
