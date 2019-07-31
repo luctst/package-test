@@ -1,9 +1,6 @@
 {
+    "private": true,
     "name": "package-test",
     "version": "1.0.0",
-    "description": "This repo is used for testing my packages",
-    "main": "",
-    "scripts": {
-        "webpack-config": "node node_modules/webpack-config/lib/cli.js"
-    }
+    "description": "This repo is used for testing my packages"
 }
